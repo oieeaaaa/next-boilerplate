@@ -1,4 +1,6 @@
 module.exports = function (plop) {
+  const componentPath = 'components/{{name}}/{{name}}';
+
   // component generator
   plop.setGenerator('component', {
       description: 'Component',
@@ -6,33 +8,33 @@ module.exports = function (plop) {
         {
           type: 'input',
           name: 'name',
-          message: 'component name please'
+          message: 'Component name:'
         },
         {
           type: 'input',
           name: 'author',
-          message: 'your name please'
+          message: 'Your name please:'
         },
         {
           type: 'input',
-          name: 'description',
+          name: 'Component description:',
           message: 'component description (will be useful for your co-devs)',
         },
       ],
       actions: [
         {
           type: 'add',
-          path: 'components/{{name}}/{{name}}.js',
+          path: `${componentPath}.js`,
           templateFile: 'templates/component.hbs'
         },
         {
           type: 'add',
-          path: 'components/{{name}}/{{name}}.scss',
+          path: `${componentPath}.scss`,
           templateFile: 'templates/scss.hbs'
         },
         {
           type: 'add',
-          path: 'components/{{name}}/{{name}}.styleguide.js',
+          path: `${componentPath}.styleguide.js`,
           templateFile: 'templates/styleguide.hbs'
         },
         {
