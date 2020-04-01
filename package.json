@@ -8,7 +8,8 @@
     "build": "next build",
     "fix:eslint": "eslint --fix ./ --ext .js --ext .jsx",
     "fix:stylelint": "stylelint --fix ./**/*.{css,scss,sass}",
-    "fix": "npm run fix:eslint && npm run fix:stylelint"
+    "fix": "npm run fix:eslint && npm run fix:stylelint",
+    "component": "plop component"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -29,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
+    "plop": "^2.6.0",
     "stylelint": "^13.2.1",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-config-standard": "^20.0.0",
