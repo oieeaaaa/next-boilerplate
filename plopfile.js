@@ -27,8 +27,25 @@ module.exports = function (plop) {
         },
         {
           type: 'add',
+          path: 'components/{{name}}/{{name}}.scss',
+          templateFile: 'templates/scss.hbs'
+        },
+        {
+          type: 'add',
           path: 'components/{{name}}/{{name}}.styleguide.js',
-          templateFile: 'templates/component-styleguide.hbs'
+          templateFile: 'templates/styleguide.hbs'
+        },
+        {
+          type: 'append',
+          pattern: /\[(?<!];)/gm,
+          path: 'styleguide/component-list.js',
+          templateFile: 'templates/object.hbs'
+        },
+        {
+          type: 'append',
+          pattern: '// list of components',
+          path: 'styleguide/component-list.js',
+          templateFile: 'templates/import.hbs'
         },
       ]
   });
