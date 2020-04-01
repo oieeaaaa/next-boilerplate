@@ -20,6 +20,7 @@ body.active-grid::before {
   max-width: rem(1280);
   margin: 0 auto;
   z-index: 9999;
+  pointer-events: none;
 
   @include center;
 
