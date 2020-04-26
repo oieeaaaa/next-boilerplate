@@ -4,11 +4,10 @@ import Nav from './nav/nav';
 import componentList from './component-list';
 
 export default () => {
-  const [ activeComponent, setActiveComponent ] = useState('');
-  const [ isGridOn, setIsGridOn ] = useState(false);
+  const [activeComponent, setActiveComponent] = useState('');
 
   useEffect(() => {
-    const toggleGrid = throttle(e => {
+    const toggleGrid = throttle((e) => {
       if (e.ctrlKey && e.key === 'g') {
         document.body.classList.toggle('active-grid');
       }
@@ -20,8 +19,8 @@ export default () => {
   });
 
 
-  const renderComponents = list => {
-    if (!activeComponent) return;
+  const renderComponents = (list) => {
+    if (!activeComponent) return () => {};
 
     const Component = list.reduce((comp, curComp) => {
       if (activeComponent === curComp.name) {
@@ -32,7 +31,7 @@ export default () => {
     }, '');
 
     return <Component />;
-  }
+  };
 
   return (
     <div className="styleguide">

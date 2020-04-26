@@ -2,7 +2,7 @@
 ***************************************
 Component: Card
 Author: joimee
-Description: 
+Description:
 ***************************************
 */
 import './card.scss';

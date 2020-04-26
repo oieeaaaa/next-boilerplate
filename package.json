@@ -12,6 +12,7 @@
     "component": "plop component"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "lodash.throttle": "^4.1.1",
     "next": "9.3.2",
     "react": "16.13.1",
@@ -21,7 +22,6 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
-    "@zeit/next-sass": "^1.0.1",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^6.8.0",

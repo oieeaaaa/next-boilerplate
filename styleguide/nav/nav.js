@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import componentList from 'styleguide/component-list';
 
 export default ({ active, onSetActive }) => (
   <ul className="styleguide-nav">
     {componentList.map(({ name }) => {
-      let buttonClass = "styleguide-nav__button";
+      let buttonClass = 'styleguide-nav__button';
 
       if (name === active) {
         buttonClass += ' active';
@@ -13,6 +12,7 @@ export default ({ active, onSetActive }) => (
       return (
         <li key={name} className="styleguide-nav__item">
           <button
+            type="button"
             className={buttonClass}
             onClick={() => onSetActive(name)}
           >

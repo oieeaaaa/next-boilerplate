@@ -2,7 +2,7 @@
 ***************************************
 Component: Button
 Author: joimee
-Description: 
+Description:
 ***************************************
 */
 import './button.scss';
