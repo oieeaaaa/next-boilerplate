@@ -1,10 +1,3 @@
-/*
-***************************************
-Component: Card
-Author: joimee
-Description:
-***************************************
-*/
 import './card.scss';
 
 export default () => (

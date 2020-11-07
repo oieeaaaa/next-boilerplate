@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import StyleGuide from 'styleguide/styleguide';
+import GridGuide from 'styleguide/grid-guide';
 
 const Home = () => (
   <div className="container">
@@ -7,7 +7,7 @@ const Home = () => (
       <title>Boilerplate</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <StyleGuide />
+    <GridGuide />
   </div>
 );
 
